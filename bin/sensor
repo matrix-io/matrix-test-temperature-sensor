@@ -2,28 +2,14 @@
 
 var os = require( 'os' );
 
-process.stdout.write( JSON.stringify( {
-  type: 'device',
-  data: {
-    'os_hostname': os.hostname(),
-    'os_type': os.type(),
-    'os_platform': os.platform(),
-    'os_arch': os.arch()
-  }
-}));
+var temp = Math.round( Math.random() * 55 ) + 20;
 
 setInterval( function () {
-  var loadavg = os.loadavg();
-  var length = loadavg.length;
-  var avg = loadavg.reduce( function ( total, num ) {
-    return total + num
-  }, 0 ) / length;
-  var memory = 1 - os.freemem() / os.totalmem();
+  temp += Math.round( Math.random() * 10 ) - 5  ;
   process.stdout.write( JSON.stringify( {
-    type: 'monitor',
+    type: 'altitude',
     data: {
-      'cpu': avg,
-      'memory': memory
+      'value': temp
     }
   }));
-}, process.env.MATRIX_TEST_SENSOR_REFRESH_RATE || 1000 );
+}, process.env.MATRIX_TEST_SENSOR_REFRESH_RATE || 5000 );
