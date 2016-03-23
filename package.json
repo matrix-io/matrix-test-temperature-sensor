@@ -1,13 +1,15 @@
 {
   "name": "matrix-test-temperature-sensor",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AdMobilize <dev@admobilize.com>",
-  "contributors": [ "Sean Canton <sean.canton@admobilize.com>" ],
+  "contributors": [
+    "Sean Canton <sean.canton@admobilize.com>"
+  ],
   "directories": {
     "bin": "./bin",
     "lib": "./lib"
@@ -16,8 +18,8 @@
   "sensors": [
     "temperature"
   ],
-  "repository" :
-  { "type" : "git"
-  , "url" : "github.com:matrix-io/matrix-test-temperature-sensor.git"
+  "repository": {
+    "type": "git",
+    "url": "github.com:matrix-io/matrix-test-temperature-sensor.git"
   }
 }
