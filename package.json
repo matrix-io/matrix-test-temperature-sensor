@@ -20,6 +20,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "github.com:matrix-io/matrix-test-temperature-sensor.git"
+    "url": "http://github.com/matrix-io/matrix-test-temperature-sensor"
   }
 }
