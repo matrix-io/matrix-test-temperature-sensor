@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "",
   "main": "index.js",
+  "keywords":["matrix-os","temperature"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
